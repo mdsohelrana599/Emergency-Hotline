@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency-Hotline</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!-- Daisy UI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <script></script>
+    <!-- Header -->
+    <header class="bg-[#F5FFF6] z-50 border-b border-slate-200">
+        <nav class=" w-[1920] mx-auto flex items-center justify-between px-7 py-2 bg-white">
+            <div class="flex items-center gap-3">
+                <img class="w-12" src="./assets/logo.png" alt="">
+                <h1 class="font-extrabold text-lg text-[#006747]">Emergency <br>Service</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="gap-1 px-6 py-1.5  rounded-full bg-[#41ff6a51]">
+                    <span class="font-bold">0</span>
+                    <i class="fa-solid fa-heart text-red-500" aria-hidden="true"></i>
+                </div>
+                <div class="gap-1 px-4 py-1.5  rounded-full bg-[#41ff6a51]">
+                    <span class="font-bold">100</span>
+                    <i class="fa-solid fa-coins text-orange-400" aria-hidden="true"></i>
+                </div>
+                <div class="gap-1 px-4 py-1.5  rounded-full bg-[#00A63E] text-white">
+                    <span id="copyCount">0</span>
+                    <span >Copy</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-[#013223] via-[#006747] to-[#013223] text-white">
+        <div class="w-[1920] mx-auto py-10 px-4 text-center"> 
+            <div class="w-24 h-24 mx-auto" >
+                <img src="./assets/logo-dark.png" alt="">
+            </div>
+            <h1 class="mt-5 text-4xl font-bold">Emergency Service Directory</h1>
+            <p class="mt-3 font-semibold text-sm">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of
+                Bangladesh</p>
+        </div>
+    </section>
 </body>
+
 </html>
