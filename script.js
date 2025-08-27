@@ -1,4 +1,4 @@
-   const heartCountEl = document.getElementById("heartCount");
+const heartCountEl = document.getElementById("heartCount");
 const coinCountEl = document.getElementById("coinCount");
 const copyCountEl = document.getElementById("copyCount");
 const historyList = document.getElementById("historyList");
@@ -79,11 +79,7 @@ document.getElementById("cardsGrid").addEventListener("click", function (e) {
     state.coins -= 20;
     updateNavbar();
     const now = new Date();
-    const timeStr = now.toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    });
+    const timeStr = now.toLocaleTimeString();
     state.history.unshift({
       name: serviceName,
       number: serviceNumber,
